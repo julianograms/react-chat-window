@@ -60,6 +60,7 @@ class Launcher extends Component {
           isOpen={isOpen}
           onClose={this.handleClick.bind(this)}
           showEmoji={this.props.showEmoji}
+          placeholder={this.props.placeholder}
         />
       </div>
     );
@@ -84,11 +85,13 @@ Launcher.propTypes = {
   messageList: PropTypes.arrayOf(PropTypes.object),
   mute: PropTypes.bool,
   showEmoji: PropTypes.bool,
+  placeholder: PropTypes.string
 };
 
 Launcher.defaultProps = {
   newMessagesCount: 0,
-  showEmoji: true
+  showEmoji: true,
+  placeholder: "Write a reply..."
 };
 
 export default Launcher;
