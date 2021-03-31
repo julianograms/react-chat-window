@@ -1,6 +1,6 @@
 {
-  "name": "react-chat-window",
-  "version": "1.2.0",
+  "name": "@julianograms/react-chat-window",
+  "version": "1.2.1",
   "description": "react-chat-window React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -10,6 +10,9 @@
     "lib",
     "umd"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
@@ -21,6 +24,7 @@
     "emoji-js": "3.2.2",
     "gh-pages": "^1.2.0",
     "prop-types": "15.5.10",
+    "@julianograms/react-chat-elements": "^10.14.3",
     "react-highlight.js": "1.0.5",
     "react-linkify": "^0.2.1",
     "socket.io-client": "2.0.3"
@@ -37,11 +41,11 @@
     "react-dom": "15.6.1"
   },
   "author": "kingofthestack",
-  "homepage": "https://kingofthestack.github.io/react-chat-window/",
+  "homepage": "https://julianograms.github.io/react-chat-window/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kingofthestack/react-chat-window.git"
+    "url": "https://github.com/julianograms/react-chat-window.git"
   },
   "keywords": [
     "react-component"
