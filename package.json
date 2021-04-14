@@ -1,6 +1,6 @@
 {
   "name": "@julianograms/react-chat-window",
-  "version": "1.2.1",
+  "version": "1.2.7",
   "description": "react-chat-window React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -24,7 +24,7 @@
     "emoji-js": "3.2.2",
     "gh-pages": "^1.2.0",
     "prop-types": "15.5.10",
-    "@julianograms/react-chat-elements": "^10.14.3",
+    "@julianograms/react-chat-elements": "^10.14.6",
     "react-highlight.js": "1.0.5",
     "react-linkify": "^0.2.1",
     "socket.io-client": "2.0.3"
