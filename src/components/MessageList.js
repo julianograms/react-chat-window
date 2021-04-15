@@ -22,13 +22,12 @@ class MessageList extends Component {
           toBottomHeight={"100%"}
           onDeleteClick={this.props.onDeleteClick}
           dataSource={this.props.messages.map((message) => {
-            
             return {
               ...message,
               position: message.author === "me" ? "right" : "left",
               type: "text",
               text: message.data.text,
-              deletable: message.author === "me",
+              deletable: message.deletable,
               date: message.time
             };
           })}
