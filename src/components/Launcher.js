@@ -56,6 +56,7 @@ class Launcher extends Component {
           messageList={this.props.messageList}
           onUserInputSubmit={this.props.onMessageWasSent}
           onFilesSelected={this.props.onFilesSelected}
+          onDeleteClick={this.props.onDeleteClick}
           agentProfile={this.props.agentProfile}
           isOpen={isOpen}
           onClose={this.handleClick.bind(this)}
@@ -80,6 +81,7 @@ Launcher.propTypes = {
   onMessageWasReceived: PropTypes.func,
   onMessageWasSent: PropTypes.func,
   newMessagesCount: PropTypes.number,
+  onDeleteClick: PropTypes.func,
   isOpen: PropTypes.bool,
   handleClick: PropTypes.func,
   messageList: PropTypes.arrayOf(PropTypes.object),

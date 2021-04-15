@@ -32,6 +32,7 @@ class ChatWindow extends Component {
           onClose={this.props.onClose}
         />
         <MessageList
+          onDeleteClick={this.props.onDeleteClick}
           messages={messageList}
           imageUrl={this.props.agentProfile.imageUrl}
         />
@@ -52,6 +53,7 @@ ChatWindow.propTypes = {
   onClose: PropTypes.func.isRequired,
   onFilesSelected: PropTypes.func,
   onUserInputSubmit: PropTypes.func.isRequired,
+  onDeleteClick: PropTypes.func.isRequired,
   showEmoji: PropTypes.bool
 };
 
